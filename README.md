@@ -1,16 +1,40 @@
-# FUTURE_FS_01 – Portfolio Project
+# FUTURE_FS_01 – Portfolio Website
 
-This repository contains my portfolio project.  
-It includes my HTML file and resume, providing a simple introduction to my work and skills.
+This repository contains my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.  
+The website showcases my skills, projects, resume, and other essential information.
 
-## Files
-- index.html – Main portfolio webpage  
-- resume.pdf – My resume  
+---
 
-## Technologies Used
-- HTML  
-- CSS (if applicable)  
-- JavaScript (if applicable)
+## 🚀 Features
+- Responsive and clean portfolio design  
+- Sections for profile, skills, and contact  
+- Integrated resume (PDF)  
+- Interactive elements using JavaScript  
+- Simple and well-structured HTML & CSS layout  
 
-## How to View
-Open the `index.html` file in any browser.
+---
+
+## 📁 Project Structure
+- **index.html** – Main webpage  
+- **style.css** – Styling for the portfolio (if applicable)  
+- **script.js** – JavaScript functionality (if applicable)  
+- **resume.pdf** – My attached resume  
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6)**  
+
+---
+
+## 📌 How to Use
+1. Download or clone this repository  
+2. Open `index.html` in any browser  
+3. Explore the portfolio sections  
+
+---
+
+## 📬 Contact
+If you want to reach out, feel free to contact me.
