@@ -1,33 +1,62 @@
-const text = [
-  "CSE Student",
-  "Web Developer",
-  "Python Learner",
-  "Tech Enthusiast"
+// script.js
+
+const roles = [
+  "Full Stack Web Developer",
+  "Python Programmer",
+  "Frontend Developer",
+  "CSE Student"
 ];
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+let roleIndex = 0;
+let charIndex = 0;
 
-(function type(){
+const typingElement = document.getElementById("typing");
 
-  if(count === text.length){
-    count = 0;
+function typeEffect() {
+
+  if(charIndex < roles[roleIndex].length){
+
+    typingElement.textContent += roles[roleIndex].charAt(charIndex);
+
+    charIndex++;
+
+    setTimeout(typeEffect,100);
+
   }
 
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing").textContent = letter;
-
-  if(letter.length === currentText.length){
-    count++;
-    index = 0;
-    setTimeout(type,1000);
-  }
   else{
-    setTimeout(type,120);
+
+    setTimeout(eraseEffect,1500);
+
   }
 
-})();
+}
+
+function eraseEffect(){
+
+  if(typingElement.textContent.length > 0){
+
+    typingElement.textContent =
+    typingElement.textContent.slice(0,-1);
+
+    setTimeout(eraseEffect,50);
+
+  }
+
+  else{
+
+    roleIndex++;
+
+    if(roleIndex >= roles.length){
+      roleIndex = 0;
+    }
+
+    charIndex = 0;
+
+    setTimeout(typeEffect,300);
+
+  }
+
+}
+
+window.onload = typeEffect;
